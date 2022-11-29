@@ -155,12 +155,12 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-def view_5_rows(df):
-    view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n').lower()
+def view_3_rows(df):
+    view_data = input('\nWould you like to view 3 rows of individual trip data? Enter yes or no\n').lower()
     start_loc = 0
     while view_data != 'no':
-        print(df.iloc[start_loc:(start_loc+5)])
-        start_loc += 5
+        print(df.iloc[start_loc:(start_loc+3)])
+        start_loc += 3
         view_data = input("Do you wish to continue?: ").lower()
 
 def main():
